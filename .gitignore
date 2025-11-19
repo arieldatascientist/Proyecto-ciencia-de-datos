@@ -79,3 +79,7 @@ logs/
 # =========================================
 .cache/
 pip-wheel-metadata/
+
+# Bases de datos locales
+*.db
+*.sqlite
