@@ -39,4 +39,16 @@ plt.show()
 
 #El mejor cliente es Ernst Handel con $35631.21 USD 
 
+#Top 10 peores clientes gráfica
+clientes_peores = clientes.tail(10)
+
+clientes_peores.plot(x = 'NombreCliente', y = 'Monto', kind = 'bar', figsize=(10, 5))
+plt.title("Top 10 peores clientes")
+plt.xlabel("Cliente")
+plt.ylabel("Monto")
+plt.xticks(rotation=65)
+plt.grid()
+plt.show()  
+
+#El peor cliente es Franchi S.p.A. con $62.46 USD 
 
